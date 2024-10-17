@@ -1,0 +1,76 @@
+/* 4 - External CSS */
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    color: blueviolet;
+}
+
+/* 8 - Classes */
+
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+/* 9 - IDs */
+
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* 10 - Ordem dos seletores */
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid green;
+}
+
+/* 11 - Nome das cores */
+
+.color-name {
+    color: chocolate;
+}
+
+/* 12 - Hexadecimal */
+
+.hex {
+    color: #00ff62;
+}
+
+/* 13 - RGB */
+
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+    color: rgb(255, 0, 153);
+}
+
+/* 13 - RGBA */
+
+.rgba {
+    color: rgba(255, 0, 153, 0.2);
+}
+
+/* 14 - HSL */
+
+.hsl {
+    color: hsla(221, 50%, 70%, 0.59);
+}
