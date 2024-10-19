@@ -144,3 +144,47 @@ h2 {
     background-color: #333;
     padding: 20px;
 }
+
+/* 22 - Padding Individual */
+
+.padding-individual{
+    background-color: #222;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+/* 23 - Shorthand Padding */
+
+.shorthand-padding{
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2{
+    background-color: #555;
+    padding: 10px 20px;
+
+    /* 10px 20px 10px 20px */
+}
+
+/* 24 - Padding com width */
+
+.without-border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #666;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box; 
+    /* Dessa forma ele consegue colocar 300 de largura e somado os 100 do padding 400px */
+    /* Tem empresas que precisam garantir o pixel perfect, então isso aqui se torna importante */
+}
