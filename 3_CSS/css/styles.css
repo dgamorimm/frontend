@@ -265,3 +265,240 @@ h2 {
     width: 200px;
     height: 400px;
 }
+
+/* 30 - text aligment */
+
+.text-aligned{
+    text-align: right;
+}
+
+.container-center{
+    text-align: center;
+    width: 300px;
+    border: #931 2px solid;
+}
+
+/* 31 - text decoration */
+
+.underline{
+    text-decoration: underline;
+}
+
+.line-trough{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: #931;
+}
+
+/* 32 - text transform */
+
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/* 33 - letter spacing */
+
+.spacing{
+    letter-spacing: 5px;
+}
+
+/* 34 - Fonts (Serif, Sans-serif, Monospace, Cursive e Fantasy) */
+/* Pode ser adicionado fontes externas com o Google Fonts */
+
+.serif{
+    font-family: Georgia;
+}
+
+/* mais utilizada em sistemas web */
+.sans-serif{
+    font-family: Helvetica;
+}
+
+.monospace{
+    font-family: "Courier New";
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+/* 35 - font style */
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+/* 36 - font weight */
+
+.thin, .bold, .bolder{
+    font-family: Helvetica;
+}
+
+.thin{
+    font-weight: 100;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bolder{
+    font-weight: 900;
+}
+
+/* 37 - font size */
+
+.small{
+    background-color: pink;
+    font-size: 6px;
+}
+
+.big{
+    background-color: pink;
+    font-size: 78px;
+}
+
+/* 38 - display */
+
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #333;
+    display: block;
+    margin: 10px;
+    color: #fff;
+}
+
+/* 39 - escondendo um elemento */
+
+.invisible{
+    display: none;
+}
+
+/* 40 - positions */
+
+.static{
+    position: static;
+    background-color: #391;
+    color: #fff;
+    width: 100px;
+    height : 100px;
+}
+
+.relative{
+    position: relative;
+    background-color: #224;
+    color: #fff;
+    width: 100px;
+    height : 100px;
+    top : 100px;
+    left: 40px;
+    /* esse método aqui não é usado dessa forma, pouco convecional */
+}
+
+.absolute{
+    position: absolute;
+    background-color: #964;
+    color: #fff;
+    width: 100px;
+    height : 100px;
+    top:2px;
+    right: 2px;
+}
+
+/* relative and absolute containers  + usado*/
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+.absolute-1,
+.absolute-2{
+    width: 50px;
+    height: 50px;
+    background-color: #422;
+    position: absolute;
+}
+
+.absolute-1{
+    top: 10px;
+    left: 10px;
+}
+.absolute-2{
+    bottom: 10px;
+    right: 10px;
+}
+
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: 1px solid blue;
+    margin-top: 120px;
+    position: fixed;
+    top : 50px;
+    right: 50px;
+    color: #fff;
+}
+
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: 1px solid blue;
+    margin-top: 120px;
+    position: sticky;
+    top : 10px;
+    color: #fff;
+}
+
+/* 41 - z-index */
+.absolute-3,
+.absolute-4,
+.absolute-5{
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute-3{
+    top:0;
+    left:0;
+    z-index: 3;
+}
+.absolute-4{
+    top: 10px;
+    left:10px;
+    background-color: #246;
+    z-index: 2;
+}
+.absolute-5{
+    top: 40px;
+    left: 40px;
+    background-color: #369;
+    z-index: 1;
+}
