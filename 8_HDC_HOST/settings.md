@@ -1,0 +1,3 @@
+- Entrar no https://cdnjs.com/ para usar os icones
+- https://cdnjs.com/libraries/font-awesome
+- https://fontawesome.com/search?s=solid&f=sharp-duotone&o=r
