@@ -1,0 +1,45 @@
+/* 2 - Media Query */
+h1 {
+    color: red;
+}
+
+/*  Se o meu usuário tiver uma resolução menor do que 500px eu vou atribuir uma nova cor*/
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* 3 min width  */
+
+p {
+    background-color: red;
+    color: #000;
+}
+
+/*  Se o meu usuário tiver uma resolução maior do que 800px eu vou atribuir uma nova cor*/
+@media screen and (min-width: 800px) {
+    p {
+        background-color: blue;
+        color: #fff;
+    }
+}
+
+/* 600px e abaixo: celular
+768px até 600px: tablet
+992px até 768px: mini laptops
+992px e acima: laptops e destkop */
+
+/* 4 - Landscape */
+
+h3 {
+    display: none;
+}
+
+/* Orientação do celular */
+@media screen and (orientation: landscape) {
+    h3 {
+        display: block;
+    }
+    
+}
