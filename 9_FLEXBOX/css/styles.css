@@ -1,0 +1,231 @@
+body{
+    padding-bottom: 500px;
+}
+
+/* 1 - Flex */
+
+.flex{
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* 2 - Flex Direction */
+/* Podemos mudar o comportamento inline do flex (chamado de row) */
+/* O valor padrão de directio é row */
+/* Alterando o flex-direction para column, teremos agora os itens se comportando como elementos de bloco */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* 3 - Flex Wrap */
+/* O flex tenta colocar todos os elementos na mesma linha por padrão */
+/* Porém há situações que queremos X elementos por linha */
+/* Para isso acontecer devemos aplicar a regra flex-wrap com o valor wrap */
+/* Agora as linhas respeita, a largura dos elementos */
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+/* 4 - Justufy Content */
+/* Com justfy-content é possível mudar como o conteúdo é posicionado no eixo horizontal */
+/* Ex.: Centraçizar os elementos na horizontal, basta colocar justify-content: center */
+
+.center,
+.space-around,
+.space-between,
+.end{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box{
+    width: 50px;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.end{
+    justify-content: end;
+}
+
+/* 5 - Align Items - Posicionamento vertical */
+
+.align-center,
+.flex-end,
+.stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.stretch{
+    align-items: stretch;
+}
+.stretch .box{
+    height: auto;
+}
+
+/* 6  Gap */
+/* O Gap é uma regra que serve para colocar espaço entre elementos que estão no flex */
+/* Nós especificamos a medida em px e este valor é adicionado entre cada um dos elementos */
+
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box{
+    width: 32%;
+}
+
+/* 7 - Order */
+/* Com a order podemos mudar a ordem dos elementos */
+/* Esta propriedade são utilizadas nos elementos filhos */
+
+.order{
+    display: flex;
+}
+
+#one{
+    order: 1;
+}
+
+#two{
+    order: 2;
+}
+
+#three{
+    order: 3;
+}
+
+/* 8 - Grow */
+/* Com flex-grow podemos mudar a proporção de um ou mais elementos filhos */
+/* Nota: A width precisa estar sem valor, como automática */
+/* Ex.: Se colocarmos grow como 2, o elementovai crescer duas vezes mais que os outros quando estiver se adaptando no container */
+
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+
+.grow .big{
+    flex: 2;
+}
+
+/* 9 - Basis */
+/* Configura a largura base do elemento */
+/* Nós podemos trabalhar com basis e grow juntas */
+/* Grow vai preencher toda a largura que basis deixar vazia  */
+
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex-grow: 1;
+}
+
+/* 10 - Shrink */
+/* É o oposto do grow */
+/* Quando utilizamos precisamos manter o tamanho dos outros elementos,
+então o elemento do shrink diminui o seu tamanho para manter os outros */
+/* Notas: Usamos esta regra em conjunto de basis e grow */
+
+.shrink{
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: 2;
+}
+
+/* 11 - Flex Shorthand */
+/* Utilizamos apenas flex conseguimos configurar grow, shrink e basis */
+/* O valores ficam nesta ordem : flex 2 1 100px */
+/* Isso dá ao elemento : grow = 2, shrink = 1 e basis = 100px */
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different{
+    flex: 3 1 400px;
+}
+
+/* 12 - Align Self */
+/* A regra  align-self alinha um elemento diferente dos demais */
+/* Podemos centralizar um elemento enquanto os outros seguem a regra de alinhamento do container */
+
+.auto-alignment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+
+.auto-alignment .different{
+    align-self: center;
+}
