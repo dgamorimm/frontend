@@ -214,3 +214,170 @@ console.log(subArray3);
 
 const subArray4 = testeSlice.slice(2);
 console.log(subArray4);
+
+// 15 - foreach
+console.log("================= 15 - foreach =================");
+
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((num) => {
+    console.log(num);
+});
+
+const posts = [
+    {title: "Post 1", category: "PHP"},
+    {title: "Post 2", category: "JavaScript"},
+    {title: "Post 3", category: "Python"},
+]
+
+posts.forEach((post) => {
+    console.log(post.title);
+    console.log(post.category);
+});
+
+// 16 - Includes
+// Verifica se um item existe na lista
+console.log("================= 16 - Includes =================");
+
+const brands = ["Apple", "Samsung", "Xiaomi"];
+
+console.log(brands.includes("Apple"));
+console.log(brands.includes("Samsumg"));
+
+// 17 - Reverse
+const reverseTest = [1, 2, 3, 4, 5];
+
+reverseTest.reverse();
+
+console.log(reverseTest);
+
+// ============================== Métodos de String ==============================
+
+// 18 - Trim
+console.log("================= 18 - Trim =================");
+
+const trimTest = "   Douglas   \n";
+
+console.log(trimTest);
+console.log(trimTest.trim());
+console.log(trimTest.length);
+console.log(trimTest.trim().length);
+
+// 19 - PadStart e PadEnd
+// Insere um texto no começo da string
+console.log("================= 19 - PadStart =================");
+
+const padStartTest = "123456";
+
+console.log(padStartTest);
+console.log(padStartTest.padStart(11, "0"));
+
+console.log(padStartTest);
+console.log(padStartTest.padEnd(11, "0"));
+
+// 20 - Split
+console.log("================= 20 - Split =================");
+
+const splitTest = "Douglas, Maria, João";
+
+console.log(splitTest);
+console.log(splitTest.split(", "));
+
+// 21 - Join
+console.log("================= 21 - Join =================");
+
+const joinTest = ["Douglas", "Maria", "João"];
+
+console.log(joinTest);
+console.log(joinTest.join(" - "));
+
+// 22 - Repeat
+console.log("================= 22 - Repeat =================");
+
+const repeatTest = "Douglas";
+
+console.log(repeatTest);
+console.log(repeatTest.repeat(5));
+
+// 23 - Rest Operator
+// Retorna o restante de um array
+console.log("================= 23 - Rest Operator =================");
+
+const  somaInfinita = (...args) => {
+    let total = 0
+
+    for (let i = 0; i < args.length; i++) {
+        total += args[i];
+    }
+
+    return total;
+}
+
+console.log(somaInfinita(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20));
+console.log(somaInfinita(1, 2, 3, 4));
+
+// 24 - For of
+console.log("================= 24 - For of =================");
+
+const somaInfinita2 = (...args) => {
+    let total = 0
+
+    for (let i of args) {
+        total += i;
+    }
+
+    return total;
+}
+
+console.log(somaInfinita2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20));
+console.log(somaInfinita2(1, 2, 3, 4));
+
+// 25 - Destructuring em objetos
+console.log("================= 25 - Destructuring em objetos =================");
+
+const userDetails = {
+    firstName : "Douglas",
+    lastName : "Amorim",
+    job : "Programador"
+}
+
+const {firstName, lastName, job} = userDetails;
+
+console.log(firstName);
+console.log(lastName);
+console.log(job);
+
+// renomear as variaveis
+const {firstName: primeiroNome} = userDetails;
+
+console.log(primeiroNome);
+
+// 26 - Destructuring em arrays
+console.log("================= 26 - Destructuring em arrays =================");
+
+const myList = ["Avião", "Submarino", "Carro"];
+
+const [veiculoA, veiculoB, veiculoC] = myList;
+
+console.log(veiculoA);
+console.log(veiculoB);
+console.log(veiculoC);
+
+// 27 - JSON
+console.log("================= 27 - JSON =================");
+
+const myJson = '{"name": "Douglas", "age": 29, "skills": ["HTML", "CSS", "JavaScript"]}';
+
+console.log(myJson);
+
+// Convertendo para objeto
+const myObject = JSON.parse(myJson);
+
+console.log(myObject);
+console.log(typeof myObject);
+
+// Convertendo para JSON
+const myJson2 = JSON.stringify(myObject);
+
+console.log(myJson2);
+console.log(typeof myJson2);
