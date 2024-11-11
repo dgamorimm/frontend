@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- 6 Global Instance -->
+    <script src="js/global.js" defer></script>
+    <!-- 7 Custom Instance -->
+    <script src="js/custom.js" defer></script>
+    <!-- 8 Interceptors -->
+    <script src="js/interceptors.js" defer></script>
+    <script src="js/scripts.js" defer></script>  <!-- primeiro coloca as libs em cima e depois coloca nossos scripts -->
+</head>
+<body>
+    <h1>Axios</h1>
+    <!-- 5 posts -->
+     <h2>Insira um novo Post:</h2>
+     <form id="post-form">
+        <div>
+            <input type="text" id="title" placeholder="Digite o titulo">
+        </div>
+        <div>
+            <textarea id="body"></textarea>
+        </div>
+        <input type="submit" value="Criar post">
+     </form>
+    <!-- 3 - Inserindo  dados -->
+     <div id="user-container"></div>
+</body>
+</html>
